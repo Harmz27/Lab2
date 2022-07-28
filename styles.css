@@ -26,18 +26,24 @@ body{
 header{
     background: blue;
     position: relative;
+    grid-column: span 3;
 }
 
 nav{
     background: rgb(255, 198, 45);
+    grid-row: span 3;
 }
 
 main{
     background: hsl(212, 100%, 55%);
+    grid-column: span 2;
+    grid-row: span 3;
+
 }
 footer{
     background: rgb(255, 198, 45);
     text-align: center;
+    grid-column: span 3;
 }
 
 .class1{
@@ -114,4 +120,48 @@ figcaption{
 }
 .long{
     left:20%;
+}
+
+.flex-container {
+    display: flex;
+    gap: 10px;
+}
+.flex-col {
+    flex-direction: column;
+}
+.flex-container > * { /* select any child of .flex-container */
+    flex-grow: 1; /* expand to fill space */
+}
+/* optional visual styling */
+div {
+    color: #007AFF;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    background: #007AFF55;
+    padding: 15px;
+    border: 2px solid #007AFF;
+    border-radius: 5px;
+}
+
+article{
+    color: #091b2f;
+    font-family: Arial, sans-serif;
+    background: #007AFF55;
+    padding: 15px;
+    border: 2px solid #007AFF;
+    border-radius: 5px;
+    width: 200px;
+}
+.flex-row {
+    flex-direction: row;
+}
+ghe{
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.grid-container{
+display: grid;
+grid-template-rows: 100px 1fr 100px;
+grid-template-columns: 1fr 3fr;
 }
