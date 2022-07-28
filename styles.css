@@ -1,0 +1,117 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+   /* border: 2px solid red;*/
+    margin: 10px;
+}
+
+/* style the h1 element(s) red and large. */
+h1 {
+ color: yellow;
+ /*position: absolute;
+*/
+}
+
+h2{
+    color: darkblue
+}
+
+p{
+    color: darkblue
+}
+
+body{
+    background: darkblue;
+}
+
+header{
+    background: blue;
+    position: relative;
+}
+
+nav{
+    background: rgb(255, 198, 45);
+}
+
+main{
+    background: hsl(212, 100%, 55%);
+}
+footer{
+    background: rgb(255, 198, 45);
+    text-align: center;
+}
+
+.class1{
+    color: blueviolet;
+}
+
+.class2{
+    font-weight: 700;
+}
+
+.class3{
+    font-style:oblique;
+}
+figure{
+    display: inline-block;
+   position: relative; 
+   height: 200px;
+}
+
+img{
+   margin: 20px;
+   width: 190px;
+   height: 190px;
+    /*border-width: 3px; */
+    object-fit: cover;
+    object-position: 0% 0%;
+    border-radius: 20px;
+    
+}
+
+    img-position{
+    margin-left: auto;
+    margin-right: auto;    
+    display: block;
+    box-shadow: 0 8px 16px 4px red;
+}
+
+.E1{
+    filter: blur(5px);
+}
+.E2{
+    filter: grayscale();
+}
+.E3{
+    filter: brightness(80%) contrast(250%);
+}
+.E4{
+    filter: hue-rotate(50deg);
+}
+.E5{
+    filter: invert();
+}
+.E6{
+    filter: sepia(80%);
+}
+.E7{
+    filter: saturate(200%);
+}
+.E8{
+    filter: invert() sepia(80) saturate(500%) hue-rotate(50deg);
+}
+figcaption{
+   position: absolute; 
+   bottom: 8px;
+   left: 30%;
+   background: paleturquoise;
+   color: crimson;
+   object-fit: cover;
+    object-position: 20% 20%;
+    border-radius: 12px;
+    font-style:unset;
+    padding: 8px;
+    
+}
+.long{
+    left:20%;
+}
